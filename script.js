@@ -6,7 +6,7 @@ canvas.height = innerHeight - 50
 
 let bolas = []
 
-for (let i = 0; i < 33; i++)
+for (let i = 0; i < 60; i++)
     bolas.push(new Bola(canvas.width/2, canvas.height/2))
 
 
