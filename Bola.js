@@ -6,7 +6,7 @@ class Bola{
         this.radio = Math.floor(Math.random() * (12 - 3) + 3)
         this.dirX = (Math.random() * 2) - 1
         this.dirY = (Math.random() * 2) - 1
-        this.velocidad = 5
+        this.velocidad = Math.floor(Math.random() * (6 - 2) + 2)
 
     }
 
