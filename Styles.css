@@ -1,5 +1,5 @@
 body {
-    background-color: #F7F5EF;
+    background-color: #fffbee;
   }
 
   canvas {
@@ -10,12 +10,27 @@ body {
     height: 100vh;
     z-index: 0;
     display: block;
-}
+  }
+
+  .blurred-section {
+    max-width: 620px;
+    width: 90%;
+    margin: 1px auto;
+    padding: 1px 2px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.041); /* semi-transparent */
+    backdrop-filter: blur(4px);        /* the blur effect */
+    -webkit-backdrop-filter: blur(8px); /* for Safari */
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 1;
+  }
   
   h1 {
     max-width: 600px;
     width: 90%;
-    margin: 30px auto;
+    margin: 15px auto;
     display: block;
     text-align: center;
     border-radius: 5px;
@@ -38,25 +53,44 @@ body {
     display: block;
     text-align: center;
     border-radius: 5px;
-    background-color: #F1EDE0;
+    background-color: #F7F5EF;
     padding-top: 2%;
     padding-bottom: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     color: black/*#0A1A2C*/;
     text-align: center;
-    font-size: 15px;
-    margin-top: -25px;
+    font-size: 18px;
+    margin-top: -10px;
     position: relative;
     z-index: 1;
-    border-color: black;
+    /*border-color: black;
     border-width: 1px;
     border-style: solid;
+    */
+  }
+
+  h3 {
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F7F5EF;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: black/*#0A1A2C*/;
+    position: relative;
+    z-index: 1;
   }
 
   .button {
     max-width: 600px;
-    width: 90%;
+    width: 40%;
     margin: 30px auto;
     display: block;
     text-align: center;
@@ -75,8 +109,8 @@ body {
     position: relative;
     z-index: 1;
     text-decoration: none;
-    border-color: black;
-    border-width: 1px;
+    border-color: gray;
+    border-width: 0.5px;
     border-style: solid;
   }
 
