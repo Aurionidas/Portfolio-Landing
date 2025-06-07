@@ -17,7 +17,7 @@ body {
     width: 90%;
     margin: 1px auto;
     padding: 1px 2px;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.041); /* semi-transparent */
     backdrop-filter: blur(4px);        /* the blur effect */
