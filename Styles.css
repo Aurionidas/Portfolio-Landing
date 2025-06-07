@@ -1,12 +1,24 @@
 body {
     background-color: #F7F5EF;
   }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: block;
+}
   
   h1 {
-    position: absolute;
-    top: 35%;
-    right: 10%;
-    left: 10%;
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
     background-color: black/*#F1EDE0*/;
     padding-top: 2%;
     padding-bottom: 0.5%;
@@ -15,6 +27,63 @@ body {
     font-weight: 100;
     color: white/*#0A1A2C*/;
     text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F1EDE0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black/*#0A1A2C*/;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 1;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .button {
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #F1EDE0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black/*#0A1A2C*/;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .button:hover {
+    background-color: #0A1A2C;
+    color: #F1EDE0;
+    border-style: none;
   }
   
   p {
