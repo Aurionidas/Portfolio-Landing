@@ -46,6 +46,13 @@ body {
     font-weight: bold;
 
   }
+
+  #disclaimer {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
   
   h1 {
     max-width: 600px;
@@ -160,6 +167,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-top: 10px;
+    background-color: #ffffff00;
   }
 
  .social-icons img {
