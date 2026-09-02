@@ -13,41 +13,76 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Juan David Lopez — data analysis, automation, statistics, and programming projects.">
+    <meta name="author" content="Juan David Lopez">
+    <meta property="og:title" content="Juan David Lopez — Portfolio">
+    <meta property="og:description" content="Data analysis, automation, and programming projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aurionidas.github.io/Portfolio-Landing/">
     <title>David's Portfolio</title>
     <script defer src="Bola.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="Styles.css">
     <link rel="icon" type="image/png" href="media/favicon.png">
-
+</head>
 
 <body>
     <canvas></canvas>
     <div class="blurred-section">
+        <nav class="site-nav" aria-label="Page sections">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
         <h1>Welcome to My Portfolio</h1>
         <h2>Showcasing Projects in Data, Automation, and Programming</h2>
-        <h3>This portfolio showcases a variety of personal, educational, and professional projects, with an emphasis on data analysis, statistics, numerical methods, and programming. 
-            <br><br>You can explore the full repository by clicking the button below.
-        </h3>
+        <section id="about">
+            <p class="intro">I work with numbers for a living, and I like building tools that make sense of them faster than a spreadsheet can. As a Salesforce admin, I spend my days building flow automations and keeping systems clean and running — and on the side I've been connecting that world to AI, from Salesforce and n8n automations to a custom MCP server that lets Claude talk directly to a company platform's API.
+                <br><br>You can explore the full repository by clicking the button below.
+            </p>
+        </section>
         <a href="https://github.com/Aurionidas/juanlopez-portfolio/" id="portfolio" class="button" target="_blank" rel="noopener noreferrer">
             Go to Github
-            <img src="media/github_logo.png" alt="GitHub Logo" style="height: 15px; vertical-align: -9%; margin-left: 1px;">
+            <img src="media/github_logo.png" alt="GitHub Logo" class="btn-icon">
         </a>
-        <footer>
+        <a href="#contact" class="button button-secondary">Get in touch</a>
+
+        <section id="projects">
+            <div class="project-card">
+                <h4>MCP Server for Internal Platform API</h4>
+                <p>The problem: Claude had no way to read or act on data living inside a company platform. My fix: a local MCP server exposing that platform's API as tools Claude can call directly — turning a chat window into something that can actually check records and take action, not just talk about them.</p>
+                <div class="tags"><span>MCP</span><span>Claude</span><span>API Integration</span></div>
+            </div>
+            <div class="project-card">
+                <h4>Salesforce Flow Automation & Admin</h4>
+                <p>As the Salesforce admin, I own the org day to day: building Flow automations to replace manual steps, cleaning up bad data before it causes problems downstream, and keeping the whole system running reliably for everyone who depends on it.</p>
+                <div class="tags"><span>Salesforce</span><span>Flows</span><span>Admin</span></div>
+            </div>
+            <div class="project-card">
+                <h4>Cross-Platform AI Automation</h4>
+                <p>Salesforce, n8n, and Zapier each solve one piece of a workflow — the gap is always in the handoff between them. I wire those pieces together with Claude-managed agents in the loop, so a process starts in one system and finishes in another without anyone touching it in between.</p>
+                <div class="tags"><span>n8n</span><span>Zapier</span><span>Claude Agents</span></div>
+            </div>
+        </section>
+
+        <footer id="contact">
             <p><br><br>Contact me: </p>
             <div class="social-icons">
-                <a href="mailto:jld.stowaway325@passinbox.com" aria-label="Send and email to Juan"id="social-media" class="button" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:jld.stowaway325@passinbox.com" aria-label="Send and email to Juan" class="social-icon-btn button" target="_blank" rel="noopener noreferrer">
                     <img src="media/mail_logo.png" alt="Send me an email">
                 </a>
                 |
-                <a href="https://www.linkedin.com/in/juan-davd-lopez" aria-label="Visit Juan's LinkedIn" id="social-media" class="button" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/juan-davd-lopez" aria-label="Visit Juan's LinkedIn" class="social-icon-btn button" target="_blank" rel="noopener noreferrer">
                     <img src="media/linkedin_logo.png" alt="LinkedIn">
                 </a>
             </div>
             <p><br><br>Thank you for visiting my portfolio!</p>
             <p id="disclaimer">
                 <br>This site uses Google Analytics to analyze traffic and improve the user experience.<br>
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
                 style="color: rgb(41, 41, 129);">See more</a>.</p>
+            <p id="build-note">Originally built by hand. Refined with AI assistance.</p>
         </footer>
     </div>
 </body>
