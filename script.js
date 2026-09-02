@@ -1,10 +1,6 @@
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
 
-canvas.width = innerWidth - 20
-canvas.height = innerHeight - 20
-
-
 let bolas = []
 
 for (let i = 0; i < 60; i++)
@@ -24,6 +20,14 @@ resizeCanvas();
 
 window.addEventListener('resize', resizeCanvas);
 
+let mouseX = null
+let mouseY = null
+
+window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX
+    mouseY = e.clientY
+})
+
 function animar(){
 
 
@@ -32,6 +36,7 @@ function animar(){
     bolas.forEach(bola => {
         bola.dibujar()
         bola.mover()
+        if (mouseX !== null) bola.influence(mouseX, mouseY)
     })
 
     requestAnimationFrame(animar)
